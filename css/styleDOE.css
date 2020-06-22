@@ -1,0 +1,239 @@
+/* Fontes */
+@font-face{
+	font-family: trebucbd;
+	src: url('../fonts/trebucbd.ttf');
+}
+@font-face{
+	font-family: laudatioc;
+	src: url('../fonts/laudatioc.ttf');
+}
+/*CLASSs*/
+.fundoSobre{
+	clear: both;
+	position: inherit;
+	background-image: url(../img/fundol.png);
+	background-repeat: repeat-y;
+	width: 100%; /*largura*/
+	min-height: 100px;
+	z-index: 0;
+	
+}
+
+/*IDs*/
+/* Barra de Navegação */
+#barra{
+    width: 100%; /*lagura*/
+    height: 90px; /*altura*/
+	background-color: #FFFFFF;
+	box-shadow: 0px 0px 70px rgba(50, 50, 50, 0.60);
+	z-index: 45;
+	padding: 0px;
+}
+/* LOGO */ 
+#logo{
+	float: left;
+	z-index: 50;
+}
+/*TITULO DA PAGINA*/
+#titulo{
+    float: inherit;
+	position: relative;
+	top: 10px;
+	left: 0px;
+	color: #C5002D;	
+    font: 30px laudatioc, Sans-serif;
+}
+/*BOTÃO DOWNLOAD*/
+#linkdownload{
+	display:block;
+	position: absolute;
+	width: 100px;
+	height: 25px;
+    top: 50px;
+    right: 50px;
+    padding: 15px;
+	background-color: #C5002D;
+	border-radius: 10px;
+}
+#btndownload{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-decoration:none;	
+    font-size: 15px; 
+    color: #FFFFFF; 	
+    font-family: trebucbd, Sans-serif;
+}
+/* TEXTBOX SELEÇÃO DE IDIOMA */
+#idioma{
+    position: absolute;
+    right: 65px;
+    top: 15px;
+    background-color: #ccc;
+    font-family: trebucbd, Sans-serif;
+}
+/* MENU PRINCIPAL e EFEITOS */
+#menu{
+	position:absolute;
+	display:block;
+	width: 80%;
+	top: 40px;
+	margin-left: 160px;	
+	font:20px trebucbd, Sans-serif;
+	z-index: 10;
+}
+#menu li { 
+	float:left; 
+	list-style-type:none; 
+	text-align:center;
+}
+#menu ul:after { 
+	display:block; 
+	content:"";
+}
+#menu li a { 
+	display:block; 
+	padding:15px 35px 0px; 
+	color: #C5002D; 
+	text-decoration:none; 
+}
+#menu ul ul { 
+	display: none;
+	position: relative;  
+	width:100%; 	
+	text-align: center;
+}
+#menu ul ul li { 
+	float:none;
+	background:#FFFFFF; 
+}
+#menu ul ul a { 
+	padding:7px; 
+	border:none; 
+	font-size:15px;
+}
+#menu ul ul li a:hover { 
+	color: #FFFFFF;
+	background-color:#C5002D; 
+	opacity:1;
+}
+#menu ul li ul.sublista {
+	display:none;
+	float: none;
+}
+#menu ul li:hover ul.sublista {
+	display:block;
+}
+
+/* RODAPÉ */
+footer{
+	clear: both;
+	background-color: #FFFFFF;
+	position: relative;
+	width: 100%;
+	min-height: 250px;
+	margin-bottom: -20px;
+	box-shadow: 0px 0px 60px rgba(50, 50, 50, 0.50);
+}
+
+footer img{
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+
+#sobre{
+    position: absolute;
+    left: 20%;
+    margin-top: -110px;
+}
+
+#obtendoDebian{
+    position: absolute;
+    left: 40%;
+    margin-top: -110px;    
+}
+
+#ajuda{
+    position: absolute;
+    left: 60%;
+    margin-top: -110px;
+}
+
+#mapaSite{
+    position: absolute;
+    left: 80%; 
+	margin-top: -110px;
+}
+
+.item{
+	font: 20px trebucbd, Sans-serif;
+	font-weight: bold;
+	color: #C5002D;
+}
+
+.subitem{
+	font: 15px trebucbd, Sans-serif;
+	font-weight: normal;
+	color: #C5002D;
+}
+
+ul{
+    text-align: center;
+}
+
+#copyright{
+	font: 10px arial, Sans-serif;
+	color: #C5002D;
+	margin-top: 30px;
+	margin-left: 15px;
+}
+hr{
+	background-color: black;
+}
+
+/* FORMATAÇÃO DOS TEXTOS*/
+.tituloTexto{
+	color: #C5002D;
+	text-align: center;
+	font: 25px trebucbd, Sans-serif;
+}
+.texto{
+	color: #000;
+	text-align: center;
+	font: 18px trebucbd, Sans-serif;
+}
+
+
+/* PÁGINA DOE */
+#pagDoe #pq{
+	margin-top: 7%;
+	width: 100%;
+	background-color: white;
+	box-shadow: 0px 0px 40px rgba(50, 50, 50, 0.60);
+    border-radius: 10px;
+    padding: 1% 10% 1% 10%; 
+}
+#pagDoe #como{
+	margin-top: 5%;
+    width: 100%;
+	background-color: white;
+	box-shadow: 0px 0px 40px rgba(50, 50, 50, 0.60);
+    border-radius: 10px;
+    padding: 1% 10% 12% 10%;
+    margin-bottom: 5%;
+}
+#pagDoe a{
+	text-decoration: none;
+	color: #C5002D;
+}
+#textocomo{
+    float: left;
+    width: 50%;
+
+}
+#btndoar{
+    float: right;
+    width: 50%;
+}
